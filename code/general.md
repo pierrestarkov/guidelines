@@ -19,6 +19,7 @@ Most of the implementation code should be covered by automated tests.
 ### General
 
 - Naming: `lower-case-with-dashes.extension`
+	- Avoid redundancy in names: if the context of a file (e.g. its containing folder) is clear, don't make it part of its name (e.g. use `storage/events.js` instead of `storage/events-storage.js`)
 - One module/class per file, with matching names (e.g. file `groove-generator.js` contains one class named `GrooveGenerator`)
 
 ### Usual organization
@@ -37,7 +38,10 @@ Most of the implementation code should be covered by automated tests.
 - Booleans should be named like adjectives, e.g. `active`
 - Use descriptive names that are self-explanatory in their context
 	- Be explicit and precise: the priority is readable code, not short code (where short code matters there are usually minifying tools for that)—for example, you should generally prefer `responseStream` to `rs`, or `propertyName` to `prop`.
+	- ...but as for filenames, don't be redundant: if the context of an item is clear, don't make it part of its name
 	- Keep very condensed names like `e` or `desc` for short local scopes
+- String identifiers (e.g. for errors) should be `lower-case-with-dashes`
+- Do not capitalize the 'Y' in "PrYv"; just use `pryv` or `Pryv` (keep "PrYv" for prose)
 
 ### Code layout / style
 
@@ -66,7 +70,7 @@ Most of the implementation code should be covered by automated tests.
 ## Source control (i.e. Git)
 
 - One change per commit
-- Clear and explanatory commit messages, always mentioning the related feature or issue  if applicable (use GitHub commit messages integration)
+- Clear and explanatory commit messages, always mentioning the related feature or issue  if applicable (use GitHub commit messages integration, e.g. `fixes #321`)
 
 
 ## Documentation
