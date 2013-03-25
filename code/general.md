@@ -26,7 +26,7 @@ Most of the implementation code should be covered by automated tests.
 
 - Source (i.e. implementation) code goes into folder `<repo root>/source`
 - Test code goes into folder `<repo root>/test`
-	- Unit tests structure should mirror implementation files structure: for example, test file for `/folder/module.js` is found in `/test/folder/module.test.js`
+	- Unit tests structure should mirror implementation files structure: for example, test file for `/source/folder/module.js` is found in `/test/folder/module.test.js`
 	- Integration tests are found in clearly named folders like `/test/acceptance`, `/test/load`, etc.
 
 
