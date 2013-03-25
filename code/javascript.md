@@ -3,7 +3,7 @@
 
 ## Testing
 
-- Our preferred testing framework is [Mocha](http://visionmedia.github.com/mocha/), with "should"-style assertions (e.g. [Should](https://github.com/visionmedia/should.js/)).
+- Our preferred testing framework is [Mocha](http://visionmedia.github.com/mocha/), with "should"-style assertions (e.g. [Should.js](https://github.com/visionmedia/should.js/)).
 
 
 ## Code
