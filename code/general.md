@@ -71,6 +71,7 @@ Most of the implementation code should be covered by automated tests.
 
 - One change per commit
 - Clear and explanatory commit messages, always mentioning the related feature or issue  if applicable (use GitHub commit messages integration, e.g. `fixes #321`)
+- Tag each published release with its version; usual format is `v{major}.{minor}.{revision}` (example: `git tag v0.4.15`)
 
 
 ## Documentation
