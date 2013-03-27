@@ -83,5 +83,5 @@ Every repo's `README.md` file should describe (where applicable):
 - The repo's nature and purpose (usually very briefly)
 - How to setup the development environment
 - How to run the tests and debug (if not obvious)
-- How to build and deploy
+- How to package and deploy
 - The repo's file organization (if not obvious)
