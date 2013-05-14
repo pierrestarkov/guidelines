@@ -45,10 +45,11 @@
 - Logging levels to use (order by severity): `debug`, `info`, `warn`, `error`
 
 
-## Recommended JSHint settings
+## JSHint settings
 
-```javascript
-/*jshint bitwise:true, curly:true, eqeqeq:true, forin:true, newcap:true, noarg:true, noempty:true, nonew:true, undef:true, unused:true, indent:2, quotmark:single, maxparams:4, maxlen:100 */
-```
+See included `.jshintrc` files:
 
-(For node code, add `, node:true` to the above.)
+- `javascript-browser.jshintrc` for browser code (assumes use of Underscore/Lodash and jQuery)
+- `javascript-node.jshintrc` for Node.js code
+
+Those files serve as master JSHint settings in our JS repos.
