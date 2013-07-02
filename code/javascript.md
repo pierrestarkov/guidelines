@@ -41,7 +41,7 @@
 - Logging in production code should use [winston](https://github.com/flatiron/winston) but be ready for quick replacement (by a custom wrapper or an alternative lib)
 	- Put all winston-specific stuff (if any) in a single location
 	- Use a generic name like `logger` for your logging objects (example: `var logger = require('winston')`, then `logger.info(message)`)
-	- If you have multiple components issuing log messages (e.g. routes, sockets, storage), include context information with each message (could be done via a wrapper for convenience)
+	- If you have multiple components issuing log messages (e.g. routes, sockets, storage), include context information with each message using format `[{context}] {message}` (could be done via a wrapper for convenience)
 - Logging levels to use (order by severity): `debug`, `info`, `warn`, `error`
 
 
