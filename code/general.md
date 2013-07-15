@@ -18,7 +18,7 @@ Most of the implementation code should be covered by automated tests.
 
 ### General
 
-- Naming: `lower-case-with-dashes.extension`
+- Naming: code files should be named after the class/object/function they expose (e.g. file `Database.js` exposes class `Database`, file `errorHandling.js` exposes helper object `errorHandling`), other files should generally follow `lower-case-with-dashes.extension`
 	- Avoid redundancy in names: if the context of a file (e.g. its containing folder) is clear, don't make it part of its name (e.g. use `storage/events.js` instead of `storage/events-storage.js`)
 - One module/class per file, with matching names (e.g. file `groove-generator.js` contains one class named `GrooveGenerator`)
 
