@@ -18,9 +18,11 @@ Most of the implementation code should be covered by automated tests.
 
 ### General
 
-- Naming: code files should be named after the class/object/function they expose (e.g. file `Database.js` exposes class `Database`, file `errorHandling.js` exposes helper object `errorHandling`), other files should generally follow `lower-case-with-dashes.extension`
-	- Avoid redundancy in names: if the context of a file (e.g. its containing folder) is clear, don't make it part of its name (e.g. use `storage/events.js` instead of `storage/events-storage.js`)
-- One module/class per file, with matching names (e.g. file `groove-generator.js` contains one class named `GrooveGenerator`)
+- Naming:
+	- Code files should be named after the module/class they expose (e.g. file `GrooveGenerator.js` exposes class `GrooveGenerator`, file `errorHandling.js` exposes helper object `errorHandling`)
+	- Other files and folders should generally follow `lower-case-with-dashes.extension`
+	- Avoid redundancy in names: if the context of a file (e.g. its containing folder) is clear, don't make it part of its name (e.g. use `storage/Events.js` instead of `storage/EventsStorage.js`)
+- One module/class per file, with matching names
 
 ### Usual organization
 
@@ -41,7 +43,7 @@ Most of the implementation code should be covered by automated tests.
 	- ...but as for filenames, don't be redundant: if the context of an item is clear, don't make it part of its name
 	- Keep very condensed names like `e` or `desc` for short local scopes
 - String identifiers (e.g. for errors) should be `lower-case-with-dashes`
-- Do not capitalize the 'Y' in "PrYv"; just use `pryv` or `Pryv` (keep "PrYv" for prose)
+- Do not capitalize the 'Y' in "PrYv"; just use `pryv` or `Pryv`
 
 ### Code layout / style
 
