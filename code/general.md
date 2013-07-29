@@ -69,11 +69,12 @@ Most of the implementation code should be covered by automated tests.
 - Use core language constructs over library-specific constructs wherever possible
 
 
-## Source control (i.e. Git)
+## Source control (i.e. Git) and versioning
 
 - One change per commit
 - Clear and explanatory commit messages, always mentioning the related feature or issue  if applicable (use GitHub commit messages integration, e.g. `fixes #321`)
 - Tag each published release with its version; usual format is `v{major}.{minor}.{revision}` (example: `git tag v0.4.15`)
+- Use [semantic versioning](http://semver.org/)
 
 
 ## Documentation
@@ -87,3 +88,10 @@ Every repo's `README.md` file should describe (where applicable):
 - How to run the tests and debug (if not obvious)
 - How to package and deploy
 - The repo's file organization (if not obvious)
+
+Also include under the top heading, if applicable: [Travis CI build status badge](http://about.travis-ci.org/docs/user/status-images/), published version in package manager (e.g. [Version Badge](http://badge.fury.io)), dependencies status (e.g. [Gemnasium](https://gemnasium.com)).
+
+### CHANGELOG
+
+- Maintain a `CHANGELOG.md` file if other code depends on the project
+- The change log should at least contain a section for each published version including new features and/or breaking changes
