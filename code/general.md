@@ -38,12 +38,13 @@ Most of the implementation code should be covered by automated tests.
 
 - Functions should be named like verbs, e.g. `doSomething()`
 - Booleans should be named like adjectives, e.g. `active`
+- Arrays, list, collections etc. should be named using the plural form (e.g. `potatoes` is a list of potato species)
 - Use descriptive names that are self-explanatory in their context
 	- Be explicit and precise: the priority is readable code, not short code (where short code matters there are usually minifying tools for that)—for example, you should generally prefer `responseStream` to `rs`, or `propertyName` to `prop`.
 	- ...but as for filenames, don't be redundant: if the context of an item is clear, don't make it part of its name
 	- Keep very condensed names like `e` or `desc` for short local scopes
 - String identifiers (e.g. for errors) should be `lower-case-with-dashes`
-- Do not capitalize the 'Y' in "PrYv"; just use `pryv` or `Pryv`
+- Do not capitalize the 'Y' in our name; just use `pryv` or `Pryv` (i.e. not `PrYv`)
 
 ### Code layout / style
 
@@ -55,6 +56,7 @@ Most of the implementation code should be covered by automated tests.
 - Spacing:
 	- One instruction per line
 	- Use blank lines to separate groups of related instructions ("paragraphs" of code)
+	- No extra spaces at the end of lines (including blank lines)—this should be enforced by your editor or a pre-commit hook if needed
 
 ### Comments
 
