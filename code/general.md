@@ -1,8 +1,8 @@
 # General coding guidelines
 
-Those guidelines apply to all applicable situations, except if mentioned otherwise in specific guidelines, or where there exists a standard usage that is overwhelmingly followed for a particular case.
+Those guidelines apply to all applicable situations, except 1) if mentioned otherwise in specific guidelines or 2) if widely-used standards exist and differ.
 
-Specific guidelines documents should follow the same sections order where applicable.
+Specific guidelines documents should follow the same sections order.
 
 
 ## Testing
@@ -10,8 +10,8 @@ Specific guidelines documents should follow the same sections order where applic
 Most of the implementation code should be covered by automated tests.
 
 - Functional (or acceptance) tests are required; they are the only functional specifications we keep of completed work
-- Unit tests are only needed if they provide clear value in addition to the functional tests
-- Always work test-first if you can
+- Unit tests are only required if they provide clear value (e.g. as documentation) in addition to the functional tests
+- Always work test-first if you can; if not be prepared to explain why
 
 
 ## Files and folders
@@ -83,11 +83,11 @@ Most of the implementation code should be covered by automated tests.
 
 ### README
 
-Every repo's `README.md` file should describe (where applicable):
+Every repo's `README.md` file should describe (if applicable):
 
-- The repo's nature and purpose (usually very briefly)
+- The repo's nature and purpose (usually very briefly)—this should match the GitHub repo description
 - How to setup the development environment
-- How to run the tests and debug (if not obvious)
+- How to run the tests and debug
 - How to package and deploy
 - The repo's file organization (if not obvious)
 
