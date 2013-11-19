@@ -12,7 +12,8 @@
 
 - General functions & variables: `camelCase`
 - Constructor functions: `PascalCase`
-- Enumeration objects and properties used as constants: `PascalCase` (+ apply `Object.freeze()`)
+- Enumeration objects: `PascalCase` (+ apply `Object.freeze()`)
+- Properties used as constants (e.g. in enumeration objects, recommended): `PascalCase` or `ALL_CAPS`
 
 ### Code layout / style
 
