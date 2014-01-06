@@ -12,7 +12,8 @@ Everyone working on Pryv apps and services, either internally or on mandate from
 
 We try to be brief and terse, keeping to guidelines themselves and avoiding the rationales behind.
 
-For now we just have coding guidelines (in `code`), for general aspects and Javascript. The goal is to add coding guidelines for every other language that we frequently use (starting with HTML/CSS), as well as UI and—if applicable—UX guidelines (in a future `ui-ux` folder).
+- Coding guidelines are in `code`, covering general aspects and Javascript. The goal is to add coding guidelines for every other language that we frequently use (starting with HTML/CSS), as well as UI and—if applicable—UX guidelines (in a future `ui-ux` folder).
+- Quick collaboration guidelines are in `collaboration.md`.
 
 
 ## Usage
