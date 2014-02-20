@@ -29,10 +29,10 @@
 ### Miscellaneous
 
 - Always use strict equality: `===` or `!==`
-- Use `.bind(this)` (or better, `thisArg` when available) instead of aliasing (e.g. `var self = this`)
+- Use `.bind(this)` (or better, `thisArg` when available) instead of aliasing (`var self = this`)
 - Keep functions short and operating within a single level of abstraction
 - Prefer duck-typing to `instanceof` type testing
-- Use [lodash](http://lodash.com) as a general-purpose utility library when core Javascript constructs are not sufficient
+- Use [lodash](http://lodash.com) as a general-purpose utility library when core Javascript constructs are not sufficient (beware of over-using it especially on Node.js where there are no cross-browser compatibility issues)
 
 
 ## Node.js specifics
