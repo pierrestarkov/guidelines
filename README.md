@@ -12,13 +12,17 @@ Everyone working on Pryv apps and services, either internally or on mandate from
 
 We try to be brief and terse, keeping to guidelines themselves and avoiding the rationales behind.
 
-- Coding guidelines are in `code`, covering general aspects and Javascript. The goal is to add coding guidelines for every other language that we frequently use (starting with HTML/CSS), as well as UI and—if applicable—UX guidelines (in a future `ui-ux` folder).
-- Quick collaboration guidelines are in `collaboration.md`.
+- Coding guidelines are in `code`
+	- [General](https://github.com/pryv/guidelines/blob/master/code/general.md)
+	- [Javascript](https://github.com/pryv/guidelines/blob/master/code/javascript.md), with .jshintrc files for [Node.js](https://github.com/pryv/guidelines/blob/master/code/javascript-node.jshintrc) and [browser](https://github.com/pryv/guidelines/blob/master/code/javascript-browser.jshintrc) code
+- Collaboration guidelines are in `collaboration`
+	- [Definitions of "done"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-done.md)
+	- [Development cycle](https://github.com/pryv/guidelines/blob/master/collaboration/development-cycle.md)
 
 
 ## Usage
 
-Read and understand (or clarify) the guidelines that pertain to your work for Pryv. Note that specific guidelines (e.g. for a particular language) always apply over general guidelines in case of contradiction. If anything rubs you the wrong way, discuss with us. Everything is a work-in-progress, everything is debatable, but nothing should be silently ignored. So let's talk if you...
+Read and understand (or clarify) the guidelines that pertain to your work for Pryv. Note that specific guidelines (e.g. for a particular language) always apply over general guidelines in case of contradiction. If anything rubs you the wrong way, discuss it. Everything is a work-in-progress, everything is debatable, but nothing should be silently ignored. So let's talk if you...
 
 - just disagree
 - feel your specific case calls for doing things differently
