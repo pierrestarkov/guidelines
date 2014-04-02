@@ -12,7 +12,7 @@ A quick reference for our internal team.
 
 ## Each iteration
 
-1. Planning meeting: pick features / tasks, estimate (hours), taking into account release planning; output: iteration contents
+1. Planning meeting: pick features / tasks, estimate (hours), taking into account release planning; output: iteration contents (see also: [definitions of "ready"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-ready.md))
 2. Implement; output: candidate product increment
 3. Review meeting: present work done (demo) to team; output: validated product increment
 4. If relevant: iteration retrospective meeting
