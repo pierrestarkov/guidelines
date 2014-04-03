@@ -16,7 +16,7 @@ We try to be brief and terse, keeping to guidelines themselves and avoiding the 
 	- [General](https://github.com/pryv/guidelines/blob/master/code/general.md)
 	- [Javascript](https://github.com/pryv/guidelines/blob/master/code/javascript.md), with .jshintrc files for [Node.js](https://github.com/pryv/guidelines/blob/master/code/javascript-node.jshintrc) and [browser](https://github.com/pryv/guidelines/blob/master/code/javascript-browser.jshintrc) code
 - **Collaboration** guidelines are in `collaboration`
-	- [Development cycle](https://github.com/pryv/guidelines/blob/master/collaboration/development-cycle.md)
+	- [Development cycles](https://github.com/pryv/guidelines/blob/master/collaboration/development-cycles.md)
 	- [Definitions of "ready"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-ready.md)
 	- [Definitions of "done"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-done.md)
 
