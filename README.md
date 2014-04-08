@@ -1,16 +1,9 @@
 # Pryv guidelines
 
-Pryv is made of many heterogeneous components, written by different people, and we just can't do without at least a minimal set of guidelines. As for any of those, our goal is to minimize friction in collaboration and delivery/takeover by requiring a reasonable level of uniformity and consistency.
-
-
-## Audience
-
-Everyone working on Pryv apps and services, either internally or on mandate from us.
+Pryv is made of many heterogeneous components, written by different people, and we just can't do without at least a minimal set of guidelines. The goal is to minimize friction in collaboration and delivery/takeover by requiring a reasonable level of uniformity and consistency.
 
 
 ## Contents
-
-We try to be brief and terse, keeping to guidelines themselves and avoiding the rationales behind.
 
 - **Coding** guidelines are in `code`
 	- [General](https://github.com/pryv/guidelines/blob/master/code/general.md)
@@ -20,10 +13,17 @@ We try to be brief and terse, keeping to guidelines themselves and avoiding the 
 	- [Definitions of "ready"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-ready.md)
 	- [Definitions of "done"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-done.md)
 
+We try to be brief and terse, keeping to guidelines themselves and avoiding the rationales behind.
+
+
+## Audience
+
+Everyone working on Pryv apps and services, either internally or on mandate from us.
+
 
 ## Usage
 
-Read and understand (or clarify) the guidelines that pertain to your work for Pryv. Note that specific guidelines (e.g. for a particular language) always apply over general guidelines in case of contradiction. If anything rubs you the wrong way, discuss it. Everything is a work-in-progress, everything is debatable, but nothing should be silently ignored. So let's talk if you...
+Read and understand (or clarify) the guidelines that pertain to your work for Pryv. Note that specific guidelines (e.g. for a particular programming language) always apply over general guidelines in case of contradiction. If anything bothers you, discuss it. Everything is a work-in-progress, everything is debatable, but nothing should be silently ignored. So let's talk if you...
 
 - just disagree
 - feel your specific case calls for doing things differently
