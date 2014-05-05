@@ -12,6 +12,7 @@ Pryv is made of many heterogeneous components, written by different people, and 
 	- [Development cycles](https://github.com/pryv/guidelines/blob/master/collaboration/development-cycles.md)
 	- [Definitions of "ready"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-ready.md)
 	- [Definitions of "done"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-done.md)
+	- [Meetings](https://github.com/pryv/guidelines/blob/master/collaboration/meetings.md)
 
 We try to be brief and terse, keeping to guidelines themselves and avoiding the rationales behind.
 

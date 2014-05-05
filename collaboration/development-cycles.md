@@ -1,7 +1,5 @@
 # Development cycle
 
-A quick reference for our internal team.
-
 ## Each milestone
 
 1. **Plan milestone**: pick features/tasks (or higher level themes), estimate (effort points, no days/hours)
