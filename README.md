@@ -8,6 +8,8 @@ Pryv is made of many heterogeneous components, written by different people, and 
 - **Coding** guidelines are in `code`
 	- [General](https://github.com/pryv/guidelines/blob/master/code/general.md)
 	- [Javascript](https://github.com/pryv/guidelines/blob/master/code/javascript.md), with .jshintrc files for [Node.js](https://github.com/pryv/guidelines/blob/master/code/javascript-node.jshintrc) and [browser](https://github.com/pryv/guidelines/blob/master/code/javascript-browser.jshintrc) code
+- **UX** guidelines are in `ux`
+  - [Wording](https://github.com/pryv/guidelines/blob/master/ux/wording.md)
 - **Collaboration** guidelines are in `collaboration`
 	- [Development cycles](https://github.com/pryv/guidelines/blob/master/collaboration/development-cycles.md)
 	- [Definitions of "ready"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-ready.md)
