@@ -14,6 +14,9 @@
 - To describe events of mixed or undetermined type, use **"content"** for uncountable cases and **"item(s)"** for countable cases
 
 
-## Miscellaneous
+## Miscellaneous actions
 
+- Sign up / sign in:
+    - Opening a new user account is **"signing up"**, not "registering"
+    - Authentifying as an existing user is **"signing in"**, not "logging in"
 - Putting content in the trash is **"deleting"**, not "trashing"
