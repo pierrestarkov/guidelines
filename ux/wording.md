@@ -16,7 +16,7 @@
 
 ## Miscellaneous actions
 
-- Sign up / sign in:
+- Register / sign in:
     - Opening a new user account is **"registering"** (not "signing up")
     - Authenticating as an existing user is **"signing in"** (not "logging in"); terminating a session is **"signing out"**
 - Putting content in the trash is **"deleting"** (not "trashing")
