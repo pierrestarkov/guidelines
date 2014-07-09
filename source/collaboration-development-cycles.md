@@ -12,7 +12,7 @@
 
 ## Each iteration
 
-See also: [definitions of "ready"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-ready.md).
+See also: [definitions of "ready"](collaboration-definitions-of-ready.html).
 
 0. **Prerequisites**:
 	- Planning contents (in collaboration tools) are up-to-date (including prioritization and rough estimates)

@@ -5,18 +5,23 @@ Pryv is made of many heterogeneous components, written by different people, and 
 
 ## Contents
 
-- **Coding** guidelines
-	- [General](code-general.html)
-	- [Javascript](code-javascript), with .jshintrc files for [Node.js](code/javascript-node.jshintrc) and [browser](code/javascript-browser.jshintrc) code
-- **User experience** guidelines
-  - [Wording](ux-wording.html)
-- **Collaboration** guidelines
-	- [Development cycles](collaboration-development-cycles.html)
-	- [Meetings](collaboration-meetings.html)
-	- [Definitions of "ready"](collaboration-definitions-of-ready.html)
-	- [Definitions of "done"](collaboration-definitions-of-done.html)
+We try to keep it brief and terse, sticking to the guidelines themselves and avoiding the rationales behind.
 
-We try to be brief and terse, keeping to guidelines themselves and avoiding the rationales behind.
+### Coding guidelines
+
+- [General](code-general.html)
+- [Javascript](code-javascript), with `.jshintrc` files for [Node.js](code/javascript-node.jshintrc) and [browser](code/javascript-browser.jshintrc) code
+
+### User experience guidelines
+
+- [Wording](ux-wording.html)
+
+### Collaboration guidelines
+
+- [Development cycles](collaboration-development-cycles.html)
+- [Meetings](collaboration-meetings.html)
+- [Definitions of "ready"](collaboration-definitions-of-ready.html)
+- [Definitions of "done"](collaboration-definitions-of-done.html)
 
 
 ## Audience
