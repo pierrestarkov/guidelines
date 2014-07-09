@@ -61,9 +61,7 @@ I.e. `package.json` / `component.json`
 
 ## JSHint settings
 
-See included `.jshintrc` files:
-
-- `javascript-browser.jshintrc` for browser code (assumes use of Underscore/Lodash and jQuery)
-- `javascript-node.jshintrc` for Node.js code
+- [For browser code](code/javascript-browser.jshintrc) (assumes use of Underscore/Lodash and jQuery)
+- [For Node.js code](code/javascript-node.jshintrc)
 
 Those files serve as master JSHint settings in our JS repos.
