@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head><meta charset="UTF-8"><meta name="description" content="TODO"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pryv guidelines - General</title><link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css"><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]--><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic|Roboto+Condensed:400,300,700"><link rel="stylesheet" type="text/css" href="assets/style.css"><link rel="stylesheet" type="text/css" href="assets/highlight/styles/zenburn.css"></head><body><header id="page-header"><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><a href="index.html" class="navbar-brand logo"><img src="assets/images/pryv-logo.png" alt="Pryv"></a><button type="button" data-toggle="collapse" data-target="#main-nav" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div id="main-nav" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Code <b class="caret"></b></a><ul class="dropdown-menu"><li class="active"><a href="code-general.html">General</a></li><li><a href="code-javascript.html">Javascript</a></li></ul></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">User experience <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="ux-wording.html">Wording</a></li></ul></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Collaboration <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="collaboration-development-cycles.html">Development cycles</a></li><li><a href="collaboration-meetings.html">Meetings</a></li><li><a href="collaboration-definitions-of-ready.html">Definitions of ready</a></li><li><a href="collaboration-definitions-of-done.html">Definitions of done</a></li></ul></li></ul></div></div></nav></header><div id="main-wrapper" class="container"><div id="main"><h1>General coding guidelines</h1>
+<p>Those guidelines apply to all applicable situations, except 1) if mentioned otherwise in specific guidelines or 2) if widely-used standards exist and differ.</p>
+<p>Specific guidelines documents should follow the same sections order.</p>
+<h2>Testing</h2>
+<p>All implementation code that can reasonably be covered by automated tests should be covered by automated tests.</p>
+<ul>
+<li>Functional (or acceptance) tests are required; they are the only functional specifications we keep of completed work</li>
+<li>Unit tests are only required if they provide clear value (e.g. as documentation) in addition to the functional tests</li>
+<li>Always work test-first if applicable; if not make sure you can explain why</li>
+</ul>
+<h2>Files and folders</h2>
+<h3>General</h3>
+<ul>
+<li>Naming:<ul>
+<li>Code files should be named after the module/class they expose (e.g. file <code>GrooveGenerator.js</code> exposes class/constructor <code>GrooveGenerator</code>, file <code>errorHandling.js</code> exposes helper functions namespace <code>errorHandling</code>)</li>
+<li>Other files and folders should generally follow <code>lower-case-with-dashes.extension</code></li>
+<li>Avoid redundancy in names: if the context of a file (e.g. its containing folder) is clear, don&#39;t make it part of its name (e.g. use <code>storage/Events.js</code> instead of <code>storage/EventsStorage.js</code>)</li>
+</ul>
+</li>
+<li>One module/class per file, with matching names</li>
+</ul>
+<h3>Usual organization</h3>
+<ul>
+<li>Source (i.e. implementation) code goes into folder <code>&lt;repo root&gt;/source</code></li>
+<li>Test code goes into folder <code>&lt;repo root&gt;/test</code><ul>
+<li>Unit tests structure should mirror implementation files structure: for example, test file for <code>/source/folder/module.js</code> is found in <code>/test/folder/module.test.js</code></li>
+<li>Integration tests are found in clearly named folders like <code>/test/acceptance</code>, <code>/test/load</code>, etc.</li>
+</ul>
+</li>
+<li>Static assets (such as media content or CSS) go into <code>source/assets</code></li>
+</ul>
+<h2>Code</h2>
+<h3>Naming</h3>
+<ul>
+<li>Functions should be named like verbs, e.g. <code>doSomething()</code></li>
+<li>Booleans variables and properties should be named like adjectives, e.g. <code>active</code></li>
+<li>Arrays, list, collections etc. should be named using the plural form (e.g. <code>potatoes</code> is a list of potato species)</li>
+<li>Use descriptive names that are self-explanatory in their context<ul>
+<li>Be explicit and precise: the priority is readable code, not short code (where short code matters there are usually minifying tools for that)—for example, you should generally prefer <code>responseStream</code> to <code>rs</code>, or <code>propertyName</code> to <code>prop</code>. Exceptions to this include common cases in contexts where shortened names are used by convention (e.g. <code>err</code> for error, <code>res</code> for HTTP response, etc.)</li>
+<li>...but as for filenames, don&#39;t be redundant: if the context of an item is clear, don&#39;t make it part of its name</li>
+<li>Keep very condensed names like <code>e</code> or <code>desc</code> for short local scopes</li>
+</ul>
+</li>
+<li>String identifiers (e.g. for errors) should be <code>lower-case-with-dashes</code></li>
+<li>Do not capitalize the &#39;Y&#39; in our name; just use <code>pryv</code> or <code>Pryv</code> (i.e. not <code>PrYv</code>)</li>
+</ul>
+<h3>Code layout / style</h3>
+<ul>
+<li>Maximum line length: 100 characters</li>
+<li>Indentation:<ul>
+<li>Use spaces (soft-tabs), not tabs</li>
+<li>1 level = 2 spaces</li>
+</ul>
+</li>
+<li>Order declarations for best readability: higher-level code first, then implementation details, in usage and reading order (&quot;good code should read like a book&quot;)</li>
+<li>Spacing:<ul>
+<li>One instruction per line</li>
+<li>Use blank lines to separate groups of related instructions (&quot;paragraphs&quot; of code)</li>
+<li>No extra spaces at the end of lines (including blank lines)—this should be enforced by your editor or a pre-commit hook if needed</li>
+</ul>
+</li>
+</ul>
+<h3>Comments</h3>
+<ul>
+<li>Only use comments to describe non-obvious code behavior</li>
+<li>When applicable, comments should follow a standard format so that they can be processed by IDEs (to provide coding hints) and doc generators</li>
+</ul>
+<h3>Miscellaneous</h3>
+<ul>
+<li>Keep functions short and operating within a single level of abstraction</li>
+<li>Use duck-typing and rely on tests rather than testing for types of arguments</li>
+<li>Optimize for expressiveness and readability; only think of performance when there&#39;s a measurable problem</li>
+<li>Use core language constructs over library-specific constructs wherever possible</li>
+</ul>
+<h2>Source control (i.e. Git) and versioning</h2>
+<ul>
+<li>One change per commit</li>
+<li>Clear and explanatory commit messages, always mentioning the related feature or issue  if applicable (use GitHub commit messages integration, e.g. <code>fixes #321</code>)</li>
+<li>Tag each published release with its version; usual format is <code>v{major}.{minor}.{revision}</code> (example: <code>git tag v0.4.15</code>)</li>
+<li>Use <a href="http://semver.org/">semantic versioning</a></li>
+</ul>
+<h2>Documentation</h2>
+<h3>README</h3>
+<p>Every repo&#39;s <code>README.md</code> file should describe (if applicable):</p>
+<ul>
+<li>The repo&#39;s nature and purpose (usually very briefly)—this should match the GitHub repo description</li>
+<li>Usage instructions if applicable (e.g. for public code libraries)</li>
+<li>How to setup the development environment</li>
+<li>How to run the tests and debug</li>
+<li>How to package and deploy</li>
+<li>The repo&#39;s file organization (if not obvious)</li>
+<li>The license if applicable (<a href="https://github.com/pryv/documents">our &quot;documents&quot; repo</a> contains the typical license we use for code)</li>
+</ul>
+<p>Also include under the top heading, if applicable: <a href="http://about.travis-ci.org/docs/user/status-images/">Travis CI build status badge</a>, published version in package manager (e.g. <a href="http://badge.fury.io">Version Badge</a>), dependencies status (e.g. <a href="https://gemnasium.com">Gemnasium</a>).</p>
+<h3>CHANGELOG</h3>
+<ul>
+<li>Maintain a <code>CHANGELOG.md</code> file if other code depends on the project</li>
+<li>The change log should at least contain a section for each published version including new features and/or breaking changes</li>
+</ul>
+</div></div><footer id="page-footer"><nav class="navbar navbar-default"><div class="container"><div id="footer-nav"><ul class="nav navbar-nav"><li><a href="http://github.com/pryv/guidelines">GitHub home</a></li><li><a href="http://github.com/pryv/guidelines/issues">Issues and suggestions</a></li></ul></div></div></nav></footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="assets/bootstrap/js/bootstrap.min.js"></script><!-- Code blocks highlighting--><script src="assets/highlight/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></body></html>

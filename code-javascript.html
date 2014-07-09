@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head><meta charset="UTF-8"><meta name="description" content="TODO"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Pryv guidelines - Javascript</title><link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css"><!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]--><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic|Roboto+Condensed:400,300,700"><link rel="stylesheet" type="text/css" href="assets/style.css"><link rel="stylesheet" type="text/css" href="assets/highlight/styles/zenburn.css"></head><body><header id="page-header"><nav role="navigation" class="navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><a href="index.html" class="navbar-brand logo"><img src="assets/images/pryv-logo.png" alt="Pryv"></a><button type="button" data-toggle="collapse" data-target="#main-nav" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div id="main-nav" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Code <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="code-general.html">General</a></li><li class="active"><a href="code-javascript.html">Javascript</a></li></ul></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">User experience <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="ux-wording.html">Wording</a></li></ul></li><li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Collaboration <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="collaboration-development-cycles.html">Development cycles</a></li><li><a href="collaboration-meetings.html">Meetings</a></li><li><a href="collaboration-definitions-of-ready.html">Definitions of ready</a></li><li><a href="collaboration-definitions-of-done.html">Definitions of done</a></li></ul></li></ul></div></div></nav></header><div id="main-wrapper" class="container"><div id="main"><h1>Javascript coding guidelines</h1>
+<h2>Testing</h2>
+<ul>
+<li>Write tests using the following structure (with a testing framework that supports it, such as <a href="http://visionmedia.github.com/mocha/">Mocha</a>):<ul>
+<li>&quot;<strong>describe {component}</strong>&quot; for each tested component (one file per component)<ul>
+<li>&quot;<strong>describe {member}</strong>&quot; for each member (e.g. method) of that component<ul>
+<li>&quot;<strong>it {should do this when that}</strong>&quot; for each test case of that member</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Prefer &quot;should&quot;-style assertions to &quot;expect&quot; or &quot;assert&quot; (using e.g. <a href="https://github.com/visionmedia/should.js/">Should.js</a>)</li>
+</ul>
+<h2>Code</h2>
+<h3>Naming</h3>
+<ul>
+<li>General functions &amp; variables: <code>camelCase</code></li>
+<li>Constructor functions: <code>PascalCase</code></li>
+<li>Enumeration objects: <code>PascalCase</code> (+ apply <code>Object.freeze()</code>)</li>
+<li>Properties used as constants (e.g. in enumeration objects, recommended): <code>PascalCase</code> or <code>ALL_CAPS</code></li>
+</ul>
+<h3>Code layout / style</h3>
+<ul>
+<li>String delimiter = single quote</li>
+<li>Spacing:<ul>
+<li>Add a space after each of the following unless it&#39;s followed by a new line: comma, conditionals (<code>if</code>, <code>else</code>, <code>for</code>, etc.), closing parenthese, negation operator (<code>!</code>)</li>
+<li>Add a space before and after binary and ternary operators (<code>+</code>, <code>&amp;&amp;</code>, <code>?</code> etc.)</li>
+</ul>
+</li>
+</ul>
+<h3>Comments</h3>
+<ul>
+<li>Follow the <a href="http://en.wikipedia.org/wiki/JSDoc">JSDoc format</a> for all non-inline comments</li>
+</ul>
+<h3>Miscellaneous</h3>
+<ul>
+<li>Always use strict equality: <code>===</code> or <code>!==</code></li>
+<li>Use <code>.bind(this)</code> (or better, <code>thisArg</code> when available) instead of aliasing (<code>var self = this</code>)</li>
+<li>Keep functions short and operating within a single level of abstraction</li>
+<li>Prefer duck-typing to <code>instanceof</code> type testing</li>
+<li>Use <a href="http://lodash.com">lodash</a> as a general-purpose utility library when core Javascript constructs are not sufficient (beware of over-using it especially on Node.js where there are no cross-browser compatibility issues)</li>
+</ul>
+<h2>Packaging &amp; dependencies</h2>
+<p>I.e. <code>package.json</code> / <code>component.json</code></p>
+<ul>
+<li>List dependencies alphabetically</li>
+<li>Specify dependency version ranges using wildcards (e.g. <code>1.2.x</code>) rather than &quot;approximate&quot; syntax (e.g. <code>~1.2.3</code>)</li>
+</ul>
+<h2>Node.js specifics</h2>
+<h3>Logging</h3>
+<ul>
+<li>Do not use <code>console.log()</code> (except temporarily for tests and debugging)</li>
+<li>Logging in production code should use <a href="https://github.com/flatiron/winston">winston</a> but be ready for quick replacement (by a custom wrapper or an alternative lib)<ul>
+<li>Put all winston-specific stuff (if any) in a single location</li>
+<li>Use a generic name like <code>logger</code> for your logging objects (example: <code>var logger = require(&#39;winston&#39;)</code>, then <code>logger.info(message)</code>)</li>
+<li>If you have multiple components issuing log messages (e.g. routes, sockets, storage), include context information with each message using format <code>[{context}] {message}</code> (could be done via a wrapper for convenience)</li>
+</ul>
+</li>
+<li>Logging levels to use (order by severity): <code>debug</code>, <code>info</code>, <code>warn</code>, <code>error</code></li>
+</ul>
+<h2>JSHint settings</h2>
+<p>See included <code>.jshintrc</code> files:</p>
+<ul>
+<li><code>javascript-browser.jshintrc</code> for browser code (assumes use of Underscore/Lodash and jQuery)</li>
+<li><code>javascript-node.jshintrc</code> for Node.js code</li>
+</ul>
+<p>Those files serve as master JSHint settings in our JS repos.</p>
+</div></div><footer id="page-footer"><nav class="navbar navbar-default"><div class="container"><div id="footer-nav"><ul class="nav navbar-nav"><li><a href="http://github.com/pryv/guidelines">GitHub home</a></li><li><a href="http://github.com/pryv/guidelines/issues">Issues and suggestions</a></li></ul></div></div></nav></footer><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="assets/bootstrap/js/bootstrap.min.js"></script><!-- Code blocks highlighting--><script src="assets/highlight/highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script></body></html>

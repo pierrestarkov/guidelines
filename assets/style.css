@@ -1,0 +1,16 @@
+html,body{font-size:18px}
+body{font-family:'Roboto',Helvetica Neue,Arial,sans-serif;color:#333;padding-top:50px;overflow-x:hidden}
+*{-moz-box-sizing:border-box;box-sizing:border-box}
+#main{margin-bottom:50px}
+h1{margin:0 -10000px 1rem -10000px;padding:1rem 10000px;color:#fff;background-color:#333}
+h2{margin-left:-10000px;margin-right:-10000px;padding:.75rem 10000px;background-color:#edeff3}
+h3{text-transform:uppercase;font-size:1.1rem}
+pre{border:0 none;padding:0}
+code{color:#333;background-color:#edeff3}
+img{max-width:100%}
+.navbar .navbar-brand.logo{padding-top:5px;}
+.navbar .navbar-brand.logo img{width:auto;height:40px}
+#footer-nav .navbar-nav{margin-left:-15px}
+#page-footer nav{margin-bottom:0}
+@media (min-width: 767px){#page-header > nav{height:50px}
+}
