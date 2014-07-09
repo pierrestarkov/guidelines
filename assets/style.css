@@ -2,9 +2,9 @@ html,body{font-size:18px}
 body{font-family:'Roboto',Helvetica Neue,Arial,sans-serif;color:#333;padding-top:50px;overflow-x:hidden}
 *{-moz-box-sizing:border-box;box-sizing:border-box}
 #main{margin-bottom:50px}
-h1{margin:0 -10000px 1rem -10000px;padding:1rem 10000px;color:#fff;background-color:#333}
-h2{margin-left:-10000px;margin-right:-10000px;padding:.75rem 10000px;background-color:#edeff3}
-h3{text-transform:uppercase;font-size:1.1rem}
+h1{margin:0 -10000px 1rem -10000px;padding:1rem 10000px;color:#fff;background-color:#333;font-weight:100}
+h2{margin-left:-1rem;margin-right:-1rem;padding:.75rem 1rem;background-color:#edeff3}
+h3{text-transform:uppercase;font-size:1.25rem}
 pre{border:0 none;padding:0}
 code{color:#333;background-color:#edeff3}
 img{max-width:100%}
