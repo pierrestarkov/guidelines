@@ -1,36 +1,16 @@
 # Pryv guidelines
 
-Pryv is made of many heterogeneous components, written by different people, and we just can't do without at least a minimal set of guidelines. The goal is to minimize friction in collaboration and delivery/takeover by requiring a reasonable level of uniformity and consistency.
+Source content for our team guidelines, published on http://pryv.github.io/guidelines.
 
 
-## Contents
+## Building
 
-- **Coding** guidelines are in `code`
-	- [General](https://github.com/pryv/guidelines/blob/master/code/general.md)
-	- [Javascript](https://github.com/pryv/guidelines/blob/master/code/javascript.md), with .jshintrc files for [Node.js](https://github.com/pryv/guidelines/blob/master/code/javascript-node.jshintrc) and [browser](https://github.com/pryv/guidelines/blob/master/code/javascript-browser.jshintrc) code
-- **UX** guidelines are in `ux`
-  - [Wording](https://github.com/pryv/guidelines/blob/master/ux/wording.md)
-- **Collaboration** guidelines are in `collaboration`
-	- [Development cycles](https://github.com/pryv/guidelines/blob/master/collaboration/development-cycles.md)
-	- [Definitions of "ready"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-ready.md)
-	- [Definitions of "done"](https://github.com/pryv/guidelines/blob/master/collaboration/definitions-of-done.md)
-	- [Meetings](https://github.com/pryv/guidelines/blob/master/collaboration/meetings.md)
+- `make setup` sets up the environment; relies on [nvm](https://github.com/creationix/nvm)
+- `make server` runs a small server serving the generated website during development
+- `make compile` generates the website from the source into the `build` folder
+- `make publish` compiles the website (see `compile` target above) and publishes it to the repo's `gh-pages` branch
 
-We try to be brief and terse, keeping to guidelines themselves and avoiding the rationales behind.
-
-
-## Audience
-
-Everyone working on Pryv apps and services, either internally or on mandate from us.
-
-
-## Usage
-
-Read and understand (or clarify) the guidelines that pertain to your work for Pryv. Note that specific guidelines (e.g. for a particular programming language) always apply over general guidelines in case of contradiction. If anything bothers you, discuss it. Everything is a work-in-progress, everything is debatable, but nothing should be silently ignored. So let's talk if you...
-
-- just disagree
-- feel your specific case calls for doing things differently
-- think of aspects that should be covered here but aren't, or that are covered here but shouldn't.
+(Read the `makefile` for details.)
 
 
 ## License

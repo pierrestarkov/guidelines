@@ -1,0 +1,22 @@
+{
+  "name": "pryv-guidelines",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Source content for our team guidelines.",
+  "author": "Pryv team <developers@pryv.com>",
+  "homepage": "http://pryv.github.io/guidelines",
+  "keywords": [
+    "Pryv",
+    "guidelines",
+    "code",
+    "collaboration",
+    "ux",
+    "Harp"
+  ],
+  "dependencies": {
+    "harp": "git://github.com/attentif/harp.git"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
