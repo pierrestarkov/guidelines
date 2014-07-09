@@ -10,6 +10,7 @@ code{color:#333;background-color:#edeff3}
 img{max-width:100%}
 .navbar .navbar-brand.logo{padding-top:5px;}
 .navbar .navbar-brand.logo img{width:auto;height:40px}
+.dropdown-menu{font-size:inherit}
 #footer-nav .navbar-nav{margin-left:-15px}
 #page-footer nav{margin-bottom:0}
 @media (min-width: 767px){#page-header > nav{height:50px}
