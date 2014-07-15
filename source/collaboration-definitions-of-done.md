@@ -15,6 +15,7 @@ A user story (e.g. product feature) or bugfix is considered "done" when the foll
 8. Documentation (if applicable) up-to-date
 9. Change log (if applicable) up-to-date
 10. Everything committed and pushed to source control
+11. Marketing notified to prepare communication to users/public if relevant
 
 
 ## "Done" for libraries and back-end
