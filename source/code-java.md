@@ -3,7 +3,7 @@
 ## Package organization
 
 - Since maven is used to build the project, use the [maven project structure](http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
-- need to define a package organization
+- need to define a package organization guideline
 
 ## Code
 
@@ -23,7 +23,7 @@
 
 ### Exceptions
 
-- Throw at a higher level when errors come from user interaction or if the user needs to be notified of this eror
+- Throw at a higher level when errors come from user interaction or if the user needs to be notified
 - Manage internal errors locally
 
 ### Comments
