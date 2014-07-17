@@ -14,6 +14,11 @@ var pages = [
     title: 'Javascript'
   },
   {
+    id: 'code-java',
+    section: 'Code',
+    title: 'Java'
+  },
+  {
     id: 'collaboration-definitions-of-done',
     section: 'Collaboration',
     title: 'Definitions of done'

@@ -11,6 +11,7 @@ We try to keep it brief and terse, sticking to the guidelines themselves and avo
 
 - [General](code-general.html)
 - [Javascript](code-javascript), with `.jshintrc` files for [Node.js](code/javascript-node.jshintrc) and [browser](code/javascript-browser.jshintrc) code
+- [Java](code-java.html)
 
 ### User experience guidelines
 
